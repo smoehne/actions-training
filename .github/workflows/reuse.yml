@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     needs: [call-reusable-workflow]
     steps:
-      - run: echo "The time was ${{ needs.call-reusable-workflow.outputs.current-time }}"
+      - run: echo "The time was ${{ needs.call-workflow.outputs.current-time }}"
