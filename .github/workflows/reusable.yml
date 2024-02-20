@@ -10,7 +10,7 @@ on:
     outputs:
       current-time: 
         description: 'The current time'
-        value: ${{ time.outputs.time }}
+        value: ${{ steps.time.outputs.time }}
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
